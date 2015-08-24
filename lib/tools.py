@@ -16,7 +16,7 @@ def file(path, mode="r"):
 
     f = os.path.join(os.path.dirname(sys._getframe(1).f_code.co_filename), path)
     if mode != "p":
-    	f = __builtins__["file"](f, mode)
+        f = __builtins__["file"](f, mode)
     return f
 
 def authenticate(*args):
